@@ -1,5 +1,5 @@
-import Header from "@/components/header";
-import Info from "@/components/info";
+import Header from "@/components/Header";
+import Info from "@/components/Info";
 import Reservation from "@/components/Reservation";
 
 export default function Home() {
