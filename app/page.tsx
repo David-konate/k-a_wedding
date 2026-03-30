@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Info from "@/components/info";
-import Reservation from "@/components/reservation";
+import Reservation from "@/components/Reservation";
 
 export default function Home() {
   return (
