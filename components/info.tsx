@@ -13,7 +13,7 @@ export default function Info() {
             alt="Kath & Antoine"
             width={250}
             height={150}
-            className="rounded-2xl border-5 border-white shadow-xl rotate-[-10deg]"
+            className="rounded-2xl border-5 border-white shadow-xl rotate-[-5deg]"
           />
         </div>
         <h2 className="font-[family-name:var(--font-playfair)] text-2xl font-bold mt-10">
@@ -54,11 +54,10 @@ export default function Info() {
 
       <div className="flex flex-col items-center gap-4">
         <h2 className="font-(family-name:--font-playfair) text-2xl font-bold">
-          Dress code
+          Dress code / thème de la soirée
         </h2>
         <p className="font-(family-name:--font-cormorant) text-xl text-gray-600 text-center">
-          Tenue de cocktail élégante, avec une touche de rouge pour les dames et
-          de bleu pour les messieurs.
+          les bronzés font du ski ^^.
         </p>
       </div>
 
