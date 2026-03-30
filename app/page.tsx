@@ -1,5 +1,6 @@
 
 import Header from "@/components/header";
+import Info from "@/components/info";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       {/* Contenu limité en largeur */}
       <main className="flex flex-1 w-full max-w-3xl flex-col mx-auto py-32 px-16">
         {/* reste du contenu */}
+        <Info />
       </main>
     </div>
   );
