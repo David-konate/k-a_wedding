@@ -2,8 +2,11 @@ import Image from "next/image";
 
 export default function Info() {
   return (
-    <div className="flex flex-col items-center gap-16">
-      <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-16 ">
+      <div
+        className="w-full flex flex-col items-center gap-4 py-16 px-8"
+        style={{ background: "linear-gradient(to bottom, #fce4ec, #fdf6f0)" }}
+      >
         <div className="flex justify-center">
           <Image
             src="/mariage_chalet.jpg"

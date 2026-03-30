@@ -1,11 +1,16 @@
 export default function Header() {
   return (
-    <div
-      className="relative w-full h-[50vh] bg-cover bg-center"
-      style={{ backgroundImage: "url('/chalet.webp')" }}
-    >
+    <div className="relative w-full h-[50vh] overflow-hidden">
+      {/* Image de fond */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/chalet.webp')" }}
+      />
+
+      {/* Filtre par dessus l'image uniquement */}
       <div className="absolute inset-0 bg-black/50" />
 
+      {/* Texte */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full gap-2">
         <h1 className="font-[family-name:var(--font-playfair)] text-5xl font-bold text-white tracking-wide">
           Kath & Antoine

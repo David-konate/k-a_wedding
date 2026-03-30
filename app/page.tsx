@@ -1,17 +1,15 @@
-
 import Header from "@/components/header";
 import Info from "@/components/info";
+import Reservation from "@/components/reservation";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 font-sans bg-zinc-50 dark:bg-black">
-      {/* Header HORS du max-w-3xl */}
+    <div className="flex flex-col flex-1">
       <Header />
 
-      {/* Contenu limité en largeur */}
-      <main className="flex flex-1 w-full max-w-3xl flex-col mx-auto py-32 px-16">
-        {/* reste du contenu */}
+      <main className="flex flex-1 w-full flex-col mx-auto">
         <Info />
+        <Reservation />
       </main>
     </div>
   );
