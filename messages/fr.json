@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "title": "Chers invités",
+    "intro": "Nous sommes très heureux de partager cette journée si spéciale avec vous. Votre présence à nos côtés rendra cette célébration encore plus mémorable.",
+    "subtitle": "Vous trouverez ci-dessous toutes les informations utiles pour préparer votre venue et profiter pleinement du mariage."
+  },
+  "access": {
+    "title": "Accès au village",
+    "village": {
+      "question": "Quel est le village le plus proche ?",
+      "answer": "Le village le plus proche est Le Reposoir, situé à 8 min en voiture, 1 heure de marche."
+    },
+    "train": {
+      "question": "Quelle est la gare la plus proche ?",
+      "answer": "La gare SNCF la plus proche est celle de Cluses, située à 20/25 minutes de route."
+    },
+    "airport": {
+      "question": "Quel est l'aéroport le plus proche ?",
+      "answer": "L'aéroport le plus proche est celui de Genève, situé à 1 h 15 de route. Une autre possibilité est l'aéroport de Lyon Saint Exupéry, à 2 h de route."
+    },
+    "tires": {
+      "question": "Faut-il des pneus neige ?",
+      "answer": "L'utilisation de pneus neige est obligatoire en zone montagne entre novembre et avril. Si vous n'en êtes pas équipé, nous vous recommandons d'opter pour des chaînes à neige ou des chaussettes."
+    }
+  },
+  "venue": {
+    "title": "Accès au site du mariage",
+    "description": "En hiver, la piste menant au lieu du mariage n'est pas praticable, il faut laisser la voiture sur un parking situé à 900m. Le trajet à pied se fait en 15 min, le chemin est praticable à tout âge.",
+    "shuttle": "Des navettes en 4x4 ou véhicule à chenille (dans la limite de 10 allers/retours sur le séjour) seront disponibles depuis / jusqu'au parking. Ce service s'étirera jusqu'à 1 h 00 du matin.",
+    "shuttleChoice": {
+      "yes": "Je souhaiterais faire le trajet en navette.",
+      "no": "Je préfère la balade."
+    }
+  },
+  "accommodation": {
+    "title": "Hébergement",
+    "description": "Nous avons choisi ce lieu pour son cadre authentique et sa proximité avec la nature, mais aussi pour sa capacité à nous loger tous sur place. En ce sens, les logements mis à disposition sont des dortoirs aménagés, intimistes et chaleureux, avec une capacité de 6 à 12 couchages par chambre. Chaque étage est équipé de sanitaires modernes et parfaitement aménagés.",
+    "section": "Section Ratel / Konaté : lits simples de 90 × 190 cm et des lits doubles de 140 × 190 cm.",
+    "alternative": "Dans la mesure du possible, nous souhaiterions compter sur la présence de tous sur place, c'est en effet une occasion rare de partager une tranche de vie tous ensemble. Cependant, dans l'éventualité où vous souhaiteriez plus d'intimité, d'autres solutions de logement existent au village du Reposoir (Hôtel La Chartreuse, locations, …) à 8 min en voiture.",
+    "provided": {
+      "title": "Seront aussi mis à votre disposition sur place :",
+      "items": [
+        "Matelas, oreiller, taie d'oreiller, drap de lit (drap plat), drap-housse et couverture polaire",
+        "Serviette de bain",
+        "Gel douche/shampoing (2 en 1) dans les douches",
+        "Sèche-cheveux d'appoint (dans les zones de sanitaires)"
+      ]
+    },
+    "babies": {
+      "title": "Et pour les tout-petits :",
+      "items": [
+        "3 lits parapluie",
+        "3 chaises hautes",
+        "Un espace table à langer dans les sanitaires du bas",
+        "Un micro-ondes",
+        "Un petit frigo (pour leur nourriture)"
+      ]
+    },
+    "babyChoices": {
+      "intro": "Merci de préciser votre intérêt, nous essayerons de répondre au mieux aux besoins de chacun :",
+      "cot": "Je souhaiterais un lit parapluie pour mon petit bout.",
+      "noCotNormal": "Je ne souhaite pas de lit parapluie, mon enfant dormira dans un lit normal.",
+      "noCotParent": "Je ne souhaite pas de lit parapluie, on lui fera un peu de place dans le lit parental.",
+      "highchair": "Je souhaiterais une chaise haute pour mon enfant."
+    }
+  },
+  "dresscode": {
+    "title": "Code vestimentaire",
+    "description": "À confirmer"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Pour toute question concernant l'organisation :",
+    "names": "Katherine & Antoine",
+    "email": "mariage.boda.morigomez@gmail.com",
+    "whatsapp": "WhatsApp :"
+  },
+  "quote": {
+    "title": "Un petit mot",
+    "text": "« Franchement, ça fait du bien ! On a souffert par moments, mais on est restés soudés. Chacun a donné le maximum et au final on est récompensés, on a su répondre présents dans les moments importants. On est heureux pour nos proches qui nous ont poussés pendant plus de 12 ans. Quand on gagne, c'est toujours grâce au collectif. On va profiter avec eux de la soirée du 5 janvier, récupérer, puis se concentrer sur le prochain objectif. Le chemin est encore long, il faut continuer avec humilité et ambition. »",
+    "authors": "Katherine & Antoine"
+  },
+  "rsvp": {
+    "title": "Confirmation de présence",
+    "guestNames": "Noms des invités",
+    "confirm": "Je confirme notre présence",
+    "decline": "Je décline l'invitation",
+    "accommodation": {
+      "title": "Logement :",
+      "onSite": "Sur place",
+      "other": "Autre"
+    }
+  },
+"reservation": {
+  "title": "Invités",
+  "addPerson": "+ Ajouter une personne",
+  "civilite": {
+    "m": "M.",
+    "mme": "Mme",
+    "enfant": "Enfant"
+  },
+  "babies": {
+    "title": "🍼 Pour les tout-petits",
+    "intro": "Merci de préciser votre intérêt, nous essayerons de répondre au mieux aux besoins de chacun :",
+    "cot": "🛏️ Je souhaiterais un lit parapluie pour mon petit bout.",
+    "noCotNormal": "🛌 Mon enfant dormira dans un lit normal.",
+    "noCotParent": "👨‍👩‍👦 On lui fera une place dans le lit parental.",
+    "highchair": "🪑 Je souhaiterais une chaise haute pour mon enfant."
+  },
+  "shuttle": {
+    "title": "🚐 Trajet depuis le parking",
+    "description": "En hiver, la piste n'est pas praticable. Des navettes 4x4 seront disponibles jusqu'à 1h du matin (10 allers/retours max).",
+    "yes": "🚐 Je souhaiterais faire le trajet en navette.",
+    "no": "🚶 Je préfère la balade (15 min à pied)."
+  },
+  "presence": {
+    "title": "Présence",
+    "confirm": "✅ Je confirme notre présence",
+    "decline": "❌ Je décline l'invitation"
+  },
+  "logement": {
+    "title": "Logement",
+    "onSite": "🏡 Sur place",
+    "other": "🏨 Autre"
+  },
+  "recap": {
+    "title": "Récapitulatif",
+    "shuttle": "🚐 Navette",
+    "walk": "🚶 Balade à pied"
+  },
+  "submit": "Envoyer la confirmation",
+  "errors": {
+    "fillNames": "Merci de remplir le prénom et le nom de chaque invité",
+    "shuttle": "Merci de préciser votre choix de trajet",
+    "baby": "Merci de préciser vos besoins pour les enfants"
+  },
+  "adults": "adulte",
+  "adultsPlural": "adultes",
+  "child": "enfant",
+  "childPlural": "enfants"
+}
+  
+}

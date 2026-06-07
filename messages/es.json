@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "title": "Estimados invitados",
+    "intro": "Nos alegra mucho compartir este día tan especial con ustedes. Su presencia hará que esta celebración sea aún más memorable.",
+    "subtitle": "A continuación encontrarán toda la información necesaria para preparar su llegada y disfrutar plenamente de la boda."
+  },
+  "access": {
+    "title": "Acceso al pueblo",
+    "village": {
+      "question": "¿Cuál es el pueblo más cercano?",
+      "answer": "El pueblo más cercano es Le Reposoir, a 8 minutos en coche o 1 hora a pie."
+    },
+    "train": {
+      "question": "¿Cuál es la estación de tren más cercana?",
+      "answer": "La estación de tren SNCF más cercana es Cluses, a 20-25 minutos en coche."
+    },
+    "airport": {
+      "question": "¿Cuál es el aeropuerto más cercano?",
+      "answer": "El aeropuerto más cercano es el de Ginebra, a 1 hora y 15 minutos en coche. Otra opción es el aeropuerto de Lyon Saint Exupéry, a 2 horas en coche."
+    },
+    "tires": {
+      "question": "¿Se requieren neumáticos de invierno?",
+      "answer": "El uso de neumáticos de invierno es obligatorio en zonas montañosas entre noviembre y abril. Si no los tienen, les recomendamos usar cadenas o fundas para la nieve."
+    }
+  },
+  "venue": {
+    "title": "Acceso al lugar de la boda",
+    "description": "En invierno, el camino que lleva al lugar de la boda es intransitable. Deberá dejar su coche en un aparcamiento situado a 900 metros. El paseo dura 15 minutos y es apto para todas las edades.",
+    "shuttle": "Habrá servicio de transporte en vehículos 4x4 o vehículos oruga (limitado a 10 viajes de ida y vuelta durante su estancia) desde y hacia el aparcamiento. Este servicio funcionará hasta la 1:00 a. m.",
+    "shuttleChoice": {
+      "yes": "Me gustaría usar el servicio de transporte.",
+      "no": "Prefiero ir andando."
+    }
+  },
+  "accommodation": {
+    "title": "Alojamiento",
+    "description": "Elegimos este lugar por su entorno auténtico y su proximidad a la naturaleza, así como por su capacidad para alojar a todos en el mismo recinto. El alojamiento que ofrecemos son dormitorios cómodos, acogedores y con capacidad para entre 6 y 12 camas por habitación. Cada planta cuenta con baños modernos y bien equipados.",
+    "section": "Sección Ratel / Konaté: camas individuales (90 x 190 cm) y camas dobles (140 x 190 cm).",
+    "alternative": "Si es posible, nos gustaría que todos estuvieran presentes, ya que esta es una oportunidad única para compartir un momento especial. Sin embargo, si prefieren más privacidad, hay otras opciones de alojamiento disponibles en el pueblo de Le Reposoir (Hôtel La Chartreuse, alquileres vacacionales, etc.), a 8 minutos en coche.",
+    "provided": {
+      "title": "También dispondrán de lo siguiente:",
+      "items": [
+        "Colchón, almohada, funda de almohada, sábana encimera, sábana bajera y manta polar",
+        "Toalla de baño",
+        "Gel de ducha/champú (2 en 1) en las duchas",
+        "Secador de pelo portátil (en los baños)"
+      ]
+    },
+    "babies": {
+      "title": "Y para los más pequeños:",
+      "items": [
+        "3 cunas de viaje",
+        "3 tronas",
+        "Un cambiador en los baños de la planta baja",
+        "Un microondas",
+        "Una nevera pequeña (para su comida)"
+      ]
+    },
+    "babyChoices": {
+      "intro": "Por favor, especifiquen sus necesidades; haremos lo mejor para poder satisfacerlas:",
+      "cot": "Nos gustaría una cuna para nuestro bebé.",
+      "noCotNormal": "No necesitamos cuna, nuestro bebé dormirá en una cama normal.",
+      "noCotParent": "No necesitamos cuna, le haremos un espacio en la cama de los padres.",
+      "highchair": "Nos gustaría una silla de bebé para nuestro hijo/a."
+    }
+  },
+  "dresscode": {
+    "title": "Código de vestimenta",
+    "description": "Por confirmar"
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "Para cualquier pregunta sobre la organización:",
+    "names": "Katherine y Antoine",
+    "email": "mariage.boda.morigomez@gmail.com",
+    "whatsapp": "WhatsApp:"
+  },
+  "quote": {
+    "title": "Unas palabras",
+    "text": "«¡Sinceramente, se siente genial! Sufrimos en algunos momentos, pero nos mantuvimos unidos. Todos lo dimos todo y, al final, obtuvimos nuestra recompensa. Nos apoyamos mutuamente en los momentos importantes. Estamos felices por nuestros seres queridos que nos han apoyado durante más de 12 años. Cuando ganamos, siempre es gracias al equipo. Vamos a disfrutar la noche del 5 de enero con ellos, recuperarnos y luego enfocarnos en el próximo objetivo. Aún queda mucho camino por recorrer; debemos continuar con humildad y ambición.»",
+    "authors": "Katherine y Antoine"
+  },
+  "rsvp": {
+    "title": "Confirmación de presencia",
+    "guestNames": "Nombre de los invitados",
+    "confirm": "Confirmo mi asistencia",
+    "decline": "Tengo que desistir",
+    "accommodation": {
+      "title": "Alojamiento:",
+      "onSite": "En el lugar",
+      "other": "Otro"
+    }
+  },
+  "reservation": {
+  "title": "Invitados",
+  "addPerson": "+ Añadir una persona",
+  "civilite": {
+    "m": "Sr.",
+    "mme": "Sra.",
+    "enfant": "Niño/a"
+  },
+  "babies": {
+    "title": "🍼 Para los más pequeños",
+    "intro": "Por favor, especifiquen sus necesidades; haremos lo mejor para poder satisfacerlas:",
+    "cot": "🛏️ Nos gustaría una cuna para nuestro bebé.",
+    "noCotNormal": "🛌 Nuestro bebé dormirá en una cama normal.",
+    "noCotParent": "👨‍👩‍👦 Le haremos un espacio en la cama de los padres.",
+    "highchair": "🪑 Nos gustaría una silla de bebé para nuestro hijo/a."
+  },
+  "shuttle": {
+    "title": "🚐 Trayecto desde el aparcamiento",
+    "description": "En invierno, el camino es intransitable. Habrá servicio de transporte en 4x4 hasta la 1:00 a.m. (máx. 10 viajes).",
+    "yes": "🚐 Me gustaría usar el servicio de transporte.",
+    "no": "🚶 Prefiero ir andando (15 min a pie)."
+  },
+  "presence": {
+    "title": "Asistencia",
+    "confirm": "✅ Confirmo mi asistencia",
+    "decline": "❌ Tengo que desistir"
+  },
+  "logement": {
+    "title": "Alojamiento",
+    "onSite": "🏡 En el lugar",
+    "other": "🏨 Otro"
+  },
+  "recap": {
+    "title": "Resumen",
+    "shuttle": "🚐 Transporte",
+    "walk": "🚶 A pie"
+  },
+  "submit": "Enviar confirmación",
+  "errors": {
+    "fillNames": "Por favor, rellene el nombre y apellido de cada invitado",
+    "shuttle": "Por favor, indique su elección de trayecto",
+    "baby": "Por favor, indique sus necesidades para los niños"
+  },
+  "adults": "adulto",
+  "adultsPlural": "adultos",
+  "child": "niño/a",
+  "childPlural": "niños/as"
+}
+}
