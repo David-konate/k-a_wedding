@@ -92,51 +92,62 @@
     }
   },
   "reservation": {
-  "title": "Invitados",
-  "addPerson": "+ Añadir una persona",
-  "civilite": {
-    "m": "Sr.",
-    "mme": "Sra.",
-    "enfant": "Niño/a"
-  },
-  "babies": {
-    "title": "🍼 Para los más pequeños",
-    "intro": "Por favor, especifiquen sus necesidades; haremos lo mejor para poder satisfacerlas:",
-    "cot": "🛏️ Nos gustaría una cuna para nuestro bebé.",
-    "noCotNormal": "🛌 Nuestro bebé dormirá en una cama normal.",
-    "noCotParent": "👨‍👩‍👦 Le haremos un espacio en la cama de los padres.",
-    "highchair": "🪑 Nos gustaría una silla de bebé para nuestro hijo/a."
-  },
-  "shuttle": {
-    "title": "🚐 Trayecto desde el aparcamiento",
-    "description": "En invierno, el camino es intransitable. Habrá servicio de transporte en 4x4 hasta la 1:00 a.m. (máx. 10 viajes).",
-    "yes": "🚐 Me gustaría usar el servicio de transporte.",
-    "no": "🚶 Prefiero ir andando (15 min a pie)."
-  },
-  "presence": {
-    "title": "Asistencia",
-    "confirm": "✅ Confirmo mi asistencia",
-    "decline": "❌ Tengo que desistir"
-  },
-  "logement": {
-    "title": "Alojamiento",
-    "onSite": "🏡 En el lugar",
-    "other": "🏨 Otro"
-  },
-  "recap": {
-    "title": "Resumen",
-    "shuttle": "🚐 Transporte",
-    "walk": "🚶 A pie"
-  },
-  "submit": "Enviar confirmación",
-  "errors": {
-    "fillNames": "Por favor, rellene el nombre y apellido de cada invitado",
-    "shuttle": "Por favor, indique su elección de trayecto",
-    "baby": "Por favor, indique sus necesidades para los niños"
-  },
-  "adults": "adulto",
-  "adultsPlural": "adultos",
-  "child": "niño/a",
-  "childPlural": "niños/as"
-}
+    "title": "Invitados",
+    "addPerson": "+ Añadir una persona",
+    "civilite": {
+      "m": "Sr.",
+      "mme": "Sra.",
+      "enfant": "Niño/a"
+    },
+    "babies": {
+      "title": "🍼 Para los más pequeños",
+      "intro": "Por favor, especifiquen sus necesidades; haremos lo mejor para poder satisfacerlas:",
+      "cot": "🛏️ Nos gustaría una cuna para nuestro bebé.",
+      "noCotNormal": "🛌 Nuestro bebé dormirá en una cama normal.",
+      "noCotParent": "👨‍👩‍👦 Le haremos un espacio en la cama de los padres.",
+      "highchair": "🪑 Nos gustaría una silla de bebé para nuestro hijo/a."
+    },
+    "shuttle": {
+      "title": "🚐 Trayecto desde el aparcamiento",
+      "description": "En invierno, el camino es intransitable. Habrá servicio de transporte en 4x4 hasta la 1:00 a.m. (máx. 10 viajes).",
+      "yes": "🚐 Me gustaría usar el servicio de transporte.",
+      "no": "🚶 Prefiero ir andando (15 min a pie)."
+    },
+    "presence": {
+      "title": "Asistencia",
+      "confirm": "✅ Confirmo mi asistencia",
+      "decline": "❌ Tengo que desistir"
+    },
+    "logement": {
+      "title": "Alojamiento",
+      "onSite": "🏡 En el lugar",
+      "other": "🏨 Otro"
+    },
+    "menu": {
+      "title": "Menú especial",
+      "none": "Estándar",
+      "noPork": "Sin cerdo",
+      "noGluten": "Sin gluten",
+      "vegetarian": "Vegetariano",
+      "vegan": "Vegano",
+      "other": "Otro",
+      "otherPlaceholder": "Especifique su dieta..."
+    },
+    "recap": {
+      "title": "Resumen",
+      "shuttle": "🚐 Transporte",
+      "walk": "🚶 A pie"
+    },
+    "submit": "Enviar confirmación",
+    "errors": {
+      "fillNames": "Por favor, rellene el nombre y apellido de cada invitado",
+      "shuttle": "Por favor, indique su elección de trayecto",
+      "baby": "Por favor, indique sus necesidades para los niños",
+      "menuOther": "Por favor, especifique la dieta de cada invitado correspondiente"
+    },
+    "adults": "adulto",
+    "adultsPlural": "adultos",
+    "child": "niño/a",
+    "childPlural": "niños/as"
+  }
 }

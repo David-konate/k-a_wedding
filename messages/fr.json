@@ -91,53 +91,63 @@
       "other": "Autre"
     }
   },
-"reservation": {
-  "title": "Invités",
-  "addPerson": "+ Ajouter une personne",
-  "civilite": {
-    "m": "M.",
-    "mme": "Mme",
-    "enfant": "Enfant"
-  },
-  "babies": {
-    "title": "🍼 Pour les tout-petits",
-    "intro": "Merci de préciser votre intérêt, nous essayerons de répondre au mieux aux besoins de chacun :",
-    "cot": "🛏️ Je souhaiterais un lit parapluie pour mon petit bout.",
-    "noCotNormal": "🛌 Mon enfant dormira dans un lit normal.",
-    "noCotParent": "👨‍👩‍👦 On lui fera une place dans le lit parental.",
-    "highchair": "🪑 Je souhaiterais une chaise haute pour mon enfant."
-  },
-  "shuttle": {
-    "title": "🚐 Trajet depuis le parking",
-    "description": "En hiver, la piste n'est pas praticable. Des navettes 4x4 seront disponibles jusqu'à 1h du matin (10 allers/retours max).",
-    "yes": "🚐 Je souhaiterais faire le trajet en navette.",
-    "no": "🚶 Je préfère la balade (15 min à pied)."
-  },
-  "presence": {
-    "title": "Présence",
-    "confirm": "✅ Je confirme notre présence",
-    "decline": "❌ Je décline l'invitation"
-  },
-  "logement": {
-    "title": "Logement",
-    "onSite": "🏡 Sur place",
-    "other": "🏨 Autre"
-  },
-  "recap": {
-    "title": "Récapitulatif",
-    "shuttle": "🚐 Navette",
-    "walk": "🚶 Balade à pied"
-  },
-  "submit": "Envoyer la confirmation",
-  "errors": {
-    "fillNames": "Merci de remplir le prénom et le nom de chaque invité",
-    "shuttle": "Merci de préciser votre choix de trajet",
-    "baby": "Merci de préciser vos besoins pour les enfants"
-  },
-  "adults": "adulte",
-  "adultsPlural": "adultes",
-  "child": "enfant",
-  "childPlural": "enfants"
-}
-  
+  "reservation": {
+    "title": "Invités",
+    "addPerson": "+ Ajouter une personne",
+    "civilite": {
+      "m": "M.",
+      "mme": "Mme",
+      "enfant": "Enfant"
+    },
+    "babies": {
+      "title": "🍼 Pour les tout-petits",
+      "intro": "Merci de préciser votre intérêt, nous essayerons de répondre au mieux aux besoins de chacun :",
+      "cot": "🛏️ Je souhaiterais un lit parapluie pour mon petit bout.",
+      "noCotNormal": "🛌 Mon enfant dormira dans un lit normal.",
+      "noCotParent": "👨‍👩‍👦 On lui fera une place dans le lit parental.",
+      "highchair": "🪑 Je souhaiterais une chaise haute pour mon enfant."
+    },
+    "shuttle": {
+      "title": "🚐 Trajet depuis le parking",
+      "description": "En hiver, la piste n'est pas praticable. Des navettes 4x4 seront disponibles jusqu'à 1h du matin (10 allers/retours max).",
+      "yes": "🚐 Je souhaiterais faire le trajet en navette.",
+      "no": "🚶 Je préfère la balade (15 min à pied)."
+    },
+    "presence": {
+      "title": "Présence",
+      "confirm": "✅ Je confirme notre présence",
+      "decline": "❌ Je décline l'invitation"
+    },
+    "logement": {
+      "title": "Logement",
+      "onSite": "🏡 Sur place",
+      "other": "🏨 Autre"
+    },
+    "menu": {
+      "title": "Menu spécial",
+      "none": "Standard",
+      "noPork": "Sans porc",
+      "noGluten": "Sans gluten",
+      "vegetarian": "Végétarien",
+      "vegan": "Vegan",
+      "other": "Autre",
+      "otherPlaceholder": "Précisez votre régime..."
+    },
+    "recap": {
+      "title": "Récapitulatif",
+      "shuttle": "🚐 Navette",
+      "walk": "🚶 Balade à pied"
+    },
+    "submit": "Envoyer la confirmation",
+    "errors": {
+      "fillNames": "Merci de remplir le prénom et le nom de chaque invité",
+      "shuttle": "Merci de préciser votre choix de trajet",
+      "baby": "Merci de préciser vos besoins pour les enfants",
+      "menuOther": "Merci de préciser le régime alimentaire pour chaque invité concerné"
+    },
+    "adults": "adulte",
+    "adultsPlural": "adultes",
+    "child": "enfant",
+    "childPlural": "enfants"
+  }
 }
