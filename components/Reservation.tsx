@@ -39,7 +39,7 @@ export default function Reservation() {
 
   const modifierInvite = (id: number, champ: keyof Invite, valeur: string) => {
     setInvites((prev) =>
-      prev.map((inv) => (inv.id === id ? { ...inv, [champ]: valeur } : inv))
+      prev.map((inv) => (inv.id === id ? { ...inv, [champ]: valeur } : inv)),
     );
   };
 
@@ -67,14 +67,14 @@ export default function Reservation() {
 
   return (
     <div className="bg-white rounded-2xl p-8 shadow-sm space-y-8">
-
       {/* ===== LISTE DES INVITÉS ===== */}
       <div>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-bold text-stone-700 text-lg">{t("title")}</h3>
           <div className="text-sm text-stone-400">
             {nbAdultes} {nbAdultes > 1 ? t("adultsPlural") : t("adults")}
-            {nbEnfants > 0 && ` · ${nbEnfants} ${nbEnfants > 1 ? t("childPlural") : t("child")}`}
+            {nbEnfants > 0 &&
+              ` · ${nbEnfants} ${nbEnfants > 1 ? t("childPlural") : t("child")}`}
           </div>
         </div>
 
@@ -169,7 +169,9 @@ export default function Reservation() {
       {/* ===== NAVETTE ===== */}
       <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 space-y-3">
         <p className="font-bold text-blue-800">{t("shuttle.title")}</p>
-        <p className="text-blue-700 text-sm italic">{t("shuttle.description")}</p>
+        <p className="text-blue-700 text-sm italic">
+          {t("shuttle.description")}
+        </p>
         <div className="space-y-2">
           <label className="flex items-start gap-3 cursor-pointer p-3 rounded-xl hover:bg-blue-100 transition-colors">
             <input
@@ -255,7 +257,9 @@ export default function Reservation() {
       {/* ===== RÉCAPITULATIF ===== */}
       {invites.some((i) => i.prenom || i.nom) && (
         <div className="bg-stone-50 rounded-xl p-4 border border-stone-200">
-          <p className="text-stone-500 text-sm font-bold mb-2">{t("recap.title")}</p>
+          <p className="text-stone-500 text-sm font-bold mb-2">
+            {t("recap.title")}
+          </p>
           <ul className="space-y-1">
             {invites.map((inv) => (
               <li key={inv.id} className="text-stone-600 text-sm">
@@ -265,7 +269,9 @@ export default function Reservation() {
           </ul>
           {shuttleChoice && (
             <p className="text-blue-700 text-sm mt-2 pt-2 border-t border-stone-200">
-              {shuttleChoice === "shuttle" ? t("recap.shuttle") : t("recap.walk")}
+              {shuttleChoice === "shuttle"
+                ? t("recap.shuttle")
+                : t("recap.walk")}
             </p>
           )}
           {hasEnfant && babyChoice && (
