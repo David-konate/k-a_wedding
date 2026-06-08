@@ -44,10 +44,10 @@ export default function HomePage() {
           <div className="w-20 h-px bg-[#b8735a] opacity-40" />
         </div>
 
-        <p className="font-[family-name:var(--font-playfair)] text-xl text-[#6b5b52] max-w-2xl leading-relaxed mt-4">
+        <p className="font-[family-name:var(--font-playfair)] text-xl text-[#6b5b52] max-w-2xl leading-snug mt-4">
           {t("hero.intro")}
         </p>
-        <p className="font-[family-name:var(--font-playfair)] mt-4 text-[#8c7b72] max-w-xl leading-relaxed text-lg italic">
+        <p className="font-[family-name:var(--font-playfair)] mt-4 text-[#8c7b72] max-w-xl leading-snug text-lg italic">
           {t("hero.subtitle")}
         </p>
       </section>
@@ -91,7 +91,7 @@ export default function HomePage() {
               <h3 className="font-[family-name:var(--font-cormorant)] font-semibold text-[#3a2e2e] text-2xl mb-2">
                 {q}
               </h3>
-              <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-relaxed text-lg">
+              <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg">
                 {a}
               </p>
             </div>
@@ -113,11 +113,11 @@ export default function HomePage() {
             </div>
           </div>
           <div className="bg-white border border-[#e8ddd8] rounded-sm p-8 space-y-4 shadow-sm">
-            <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-relaxed text-lg">
+            <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg">
               {t("venue.description")}
             </p>
             <div className="w-full h-px bg-[#e8ddd8]" />
-            <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-relaxed text-lg">
+            <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg">
               {t("venue.shuttle")}
             </p>
           </div>
@@ -149,22 +149,22 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="space-y-6">
-          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-relaxed text-lg">
+        <div className="space-y-4">
+          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg">
             {t("accommodation.description")}
           </p>
-          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] leading-relaxed text-lg italic border-l-2 border-[#b8735a] pl-4">
+          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] leading-snug text-lg italic border-l-2 border-[#b8735a] pl-4">
             {t("accommodation.section")}
           </p>
-          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-relaxed text-lg">
+          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg">
             {t("accommodation.alternative")}
           </p>
 
           <div className="bg-white border border-[#e8ddd8] rounded-sm p-6 shadow-sm">
-            <h3 className="font-[family-name:var(--font-cormorant)] font-semibold text-[#3a2e2e] text-2xl mb-4">
+            <h3 className="font-[family-name:var(--font-cormorant)] font-semibold text-[#3a2e2e] text-2xl mb-3">
               {t("accommodation.provided.title")}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {(["0", "1", "2", "3"] as const).map((i) => (
                 <li
                   key={i}
@@ -178,10 +178,10 @@ export default function HomePage() {
           </div>
 
           <div className="bg-[#fdf6f0] border border-[#e8ddd8] rounded-sm p-6">
-            <h3 className="font-[family-name:var(--font-cormorant)] font-semibold text-[#3a2e2e] text-2xl mb-4">
+            <h3 className="font-[family-name:var(--font-cormorant)] font-semibold text-[#3a2e2e] text-2xl mb-3">
               {t("accommodation.babies.title")}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {(["0", "1", "2", "3", "4"] as const).map((i) => (
                 <li
                   key={i}
@@ -205,7 +205,7 @@ export default function HomePage() {
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mb-4">
             {t("dresscode.title")}
           </h2>
-          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl">
+          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.description")}
           </p>
         </div>
@@ -231,7 +231,7 @@ export default function HomePage() {
             <div className="w-1 h-1 rounded-full bg-[#b8735a] opacity-60" />
             <div className="w-12 h-px bg-[#b8735a] opacity-40" />
           </div>
-          <blockquote className="font-[family-name:var(--font-cormorant)] text-[#c9b8b0] italic leading-relaxed text-2xl font-light">
+          <blockquote className="font-[family-name:var(--font-cormorant)] text-[#c9b8b0] italic leading-snug text-2xl font-light">
             {t("quote.text")}
           </blockquote>
           <p className="mt-8 font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl">
@@ -249,7 +249,7 @@ export default function HomePage() {
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mb-10">
             {t("contact.title")}
           </h2>
-          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] mb-2 text-lg">
+          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] mb-2 text-lg leading-snug">
             {t("contact.intro")}
           </p>
           <p className="font-[family-name:var(--font-vibes)] text-[#3a2e2e] text-4xl mb-8">
@@ -260,7 +260,7 @@ export default function HomePage() {
             <div className="w-1 h-1 rounded-full bg-[#b8735a] opacity-50" />
             <div className="w-12 h-px bg-[#b8735a] opacity-30" />
           </div>
-          <div className="space-y-3 font-[family-name:var(--font-playfair)] text-[#6b5b52] text-lg">
+          <div className="space-y-2 font-[family-name:var(--font-playfair)] text-[#6b5b52] text-lg">
             <p>📧 {t("contact.email")}</p>
             <p>📱 {t("contact.whatsapp")}</p>
             <p className="text-[#8c7b72]">+34 625 48 61 29</p>
@@ -289,7 +289,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FOOTER */}
+      {/* FOOTER */} 
       <footer className="py-10 text-center bg-[#3a2e2e]">
         <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl mb-1">
           Katherine &amp; Antoine

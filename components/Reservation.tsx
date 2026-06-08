@@ -192,7 +192,7 @@ export default function Reservation() {
 
       {/* ===== NAVETTE ===== */}
       <div className="border border-[#e8ddd8] bg-[#fdf6f0] p-6 space-y-4">
-        <SectionTitle label="🚐" title={t("shuttle.title")} />
+        {/* <SectionTitle label="🚐" title={t("shuttle.title")} /> */}
         <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] text-lg italic border-l-2 border-[#b8735a] pl-3">
           {t("shuttle.description")}
         </p>
