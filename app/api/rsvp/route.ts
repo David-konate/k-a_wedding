@@ -1,18 +1,17 @@
 import { NextResponse } from "next/server";
 
-interface Participant {
+interface Invite {
+  civilite: string;
+  prenom: string;
   nom: string;
-  regime: string;
 }
 
 interface RSVPPayload {
-  nom: string;
-  email: string;
-  telephone: string;
-  presence: "oui" | "non" | "";
-  adultes: Participant[];
-  enfants: Participant[];
-  message: string;
+  presence: "confirm" | "decline" | null;
+  logement: "onSite" | "other" | null;
+  navette: "shuttle" | "walk" | null;
+  babyChoice: string | null;
+  invites: Invite[];
 }
 
 export async function POST(request: Request) {
@@ -35,7 +34,11 @@ export async function POST(request: Request) {
   }
 
   // Validation minimale côté serveur
-  if (!data.nom?.trim() || !data.email?.trim() || !data.presence) {
+  if (
+    !data.presence ||
+    !Array.isArray(data.invites) ||
+    data.invites.length === 0
+  ) {
     return NextResponse.json(
       { ok: false, error: "Champs obligatoires manquants" },
       { status: 400 },

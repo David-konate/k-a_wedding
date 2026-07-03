@@ -139,11 +139,15 @@
       "walk": "🚶 A pie"
     },
     "submit": "Enviar confirmación",
+    "submitting": "Enviando…",
+    "sentTitle": "¡Gracias!",
+    "sentText": "Tu respuesta se ha enviado correctamente. ¡Estamos deseando compartir este día contigo!",
     "errors": {
       "fillNames": "Por favor, rellene el nombre y apellido de cada invitado",
       "shuttle": "Por favor, indique su elección de trayecto",
       "baby": "Por favor, indique sus necesidades para los niños",
-      "menuOther": "Por favor, especifique la dieta de cada invitado correspondiente"
+      "menuOther": "Por favor, especifique la dieta de cada invitado correspondiente",
+      "send": "Se ha producido un error, inténtalo de nuevo."
     },
     "adults": "adulto",
     "adultsPlural": "adultos",

@@ -42,6 +42,9 @@ export default function Reservation() {
   const [logement, setLogement] = useState<"onSite" | "other" | null>(null);
   const [babyChoice, setBabyChoice] = useState<BabyChoice>(null);
   const [shuttleChoice, setShuttleChoice] = useState<ShuttleChoice>(null);
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const ajouterInvite = () => {
     setInvites((prev) => [
@@ -61,9 +64,36 @@ export default function Reservation() {
     );
   };
 
-  const handleSubmit = () => {
-    console.log({ invites, presence, logement, babyChoice, shuttleChoice });
-    alert(t("submit"));
+  const handleSubmit = async () => {
+    setSending(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/rsvp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          presence,
+          logement,
+          navette: shuttleChoice,
+          babyChoice,
+          invites: invites.map(({ civilite, prenom, nom }) => ({
+            civilite,
+            prenom,
+            nom,
+          })),
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Erreur");
+      }
+      setSent(true);
+    } catch (err) {
+      setError(t("errors.send"));
+      console.error("Échec envoi réservation :", err);
+    } finally {
+      setSending(false);
+    }
   };
 
   const nbAdultes = invites.filter((i) => i.civilite !== "Enfant").length;
@@ -306,33 +336,53 @@ export default function Reservation() {
         </div>
       )}
 
-      {/* ===== BOUTON ENVOYER ===== */}
-      <button
-        onClick={handleSubmit}
-        disabled={!isFormValid}
-        className="font-[family-name:var(--font-cormorant)] w-full bg-[#3a2e2e] text-[#fdf6f0] py-5 text-2xl tracking-widest font-light hover:bg-[#b8735a] transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed uppercase"
-      >
-        {t("submit")}
-      </button>
+      {sent ? (
+        /* ===== ÉCRAN DE CONFIRMATION ===== */
+        <div className="text-center bg-[#fdf6f0] border border-[#e8ddd8] p-8 space-y-3">
+          <p className="text-4xl">💌</p>
+          <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl">
+            {t("sentTitle")}
+          </p>
+          <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] text-lg leading-relaxed">
+            {t("sentText")}
+          </p>
+        </div>
+      ) : (
+        <>
+          {/* ===== BOUTON ENVOYER ===== */}
+          <button
+            onClick={handleSubmit}
+            disabled={!isFormValid || sending}
+            className="font-[family-name:var(--font-cormorant)] w-full bg-[#3a2e2e] text-[#fdf6f0] py-5 text-2xl tracking-widest font-light hover:bg-[#b8735a] transition-colors duration-300 disabled:opacity-30 disabled:cursor-not-allowed uppercase"
+          >
+            {sending ? t("submitting") : t("submit")}
+          </button>
 
-      {/* Messages d'aide */}
-      <div className="space-y-2 text-center">
-        {invites.some((i) => !i.prenom || !i.nom) && (
-          <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
-            {t("errors.fillNames")}
-          </p>
-        )}
-        {!shuttleChoice && (
-          <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
-            {t("errors.shuttle")}
-          </p>
-        )}
-        {hasEnfant && !babyChoice && (
-          <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
-            {t("errors.baby")}
-          </p>
-        )}
-      </div>
+          {/* Messages d'aide */}
+          <div className="space-y-2 text-center">
+            {error && (
+              <p className="font-[family-name:var(--font-playfair)] text-[#c0392b] text-base">
+                {error}
+              </p>
+            )}
+            {invites.some((i) => !i.prenom || !i.nom) && (
+              <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
+                {t("errors.fillNames")}
+              </p>
+            )}
+            {!shuttleChoice && (
+              <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
+                {t("errors.shuttle")}
+              </p>
+            )}
+            {hasEnfant && !babyChoice && (
+              <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
+                {t("errors.baby")}
+              </p>
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }

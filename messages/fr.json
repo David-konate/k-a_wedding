@@ -139,11 +139,15 @@
       "walk": "🚶 Balade à pied"
     },
     "submit": "Envoyer la confirmation",
+    "submitting": "Envoi en cours…",
+    "sentTitle": "Merci !",
+    "sentText": "Votre réponse a bien été envoyée. Nous avons hâte de partager ce jour avec vous !",
     "errors": {
       "fillNames": "Merci de remplir le prénom et le nom de chaque invité",
       "shuttle": "Merci de préciser votre choix de trajet",
       "baby": "Merci de préciser vos besoins pour les enfants",
-      "menuOther": "Merci de préciser le régime alimentaire pour chaque invité concerné"
+      "menuOther": "Merci de préciser le régime alimentaire pour chaque invité concerné",
+      "send": "Une erreur est survenue, merci de réessayer."
     },
     "adults": "adulte",
     "adultsPlural": "adultes",
