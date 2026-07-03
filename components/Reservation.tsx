@@ -402,7 +402,7 @@ export default function Reservation() {
                 {t("errors.shuttle")}
               </p>
             )}
-            {hasEnfant && !babyChoice && (
+            {hasEnfant && babyNeeds.length === 0 && (
               <p className="font-[family-name:var(--font-playfair)] text-[#b8a09a] text-base italic">
                 {t("errors.baby")}
               </p>
