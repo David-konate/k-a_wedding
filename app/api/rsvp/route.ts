@@ -10,7 +10,7 @@ interface RSVPPayload {
   presence: "confirm" | "decline" | null;
   logement: "onSite" | "other" | null;
   navette: "shuttle" | "walk" | null;
-  babyChoice: string | null;
+  babyNeeds: string[];
   invites: Invite[];
 }
 

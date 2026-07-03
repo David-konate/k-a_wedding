@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 type Civilite = "M." | "Mme" | "Enfant";
-type BabyChoice = "cot" | "noCotNormal" | "noCotParent" | "highchair" | null;
+type BabyChoice = "cot" | "noCotNormal" | "noCotParent" | "highchair";
 type ShuttleChoice = "shuttle" | "walk" | null;
 
 interface Invite {
@@ -40,7 +40,7 @@ export default function Reservation() {
   ]);
   const [presence, setPresence] = useState<"confirm" | "decline" | null>(null);
   const [logement, setLogement] = useState<"onSite" | "other" | null>(null);
-  const [babyChoice, setBabyChoice] = useState<BabyChoice>(null);
+  const [babyNeeds, setBabyNeeds] = useState<BabyChoice[]>([]);
   const [shuttleChoice, setShuttleChoice] = useState<ShuttleChoice>(null);
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
@@ -64,6 +64,12 @@ export default function Reservation() {
     );
   };
 
+  const toggleBabyNeed = (key: BabyChoice) => {
+    setBabyNeeds((prev) =>
+      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+    );
+  };
+
   const handleSubmit = async () => {
     setSending(true);
     setError(null);
@@ -75,7 +81,7 @@ export default function Reservation() {
           presence,
           logement,
           navette: shuttleChoice,
-          babyChoice,
+          babyNeeds,
           invites: invites.map(({ civilite, prenom, nom }) => ({
             civilite,
             prenom,
@@ -104,7 +110,7 @@ export default function Reservation() {
     presence !== null &&
     shuttleChoice !== null &&
     invites.every((i) => i.prenom && i.nom) &&
-    (!hasEnfant || babyChoice !== null);
+    (!hasEnfant || babyNeeds.length > 0);
 
   const babyChoices: { key: BabyChoice; label: string }[] = [
     { key: "cot", label: t("babies.cot") },
@@ -207,11 +213,10 @@ export default function Reservation() {
             {babyChoices.map(({ key, label }) => (
               <label key={key} className={radioLabelClass}>
                 <input
-                  type="radio"
-                  name="baby"
+                  type="checkbox"
                   className="accent-[#b8735a] mt-1 shrink-0 w-5 h-5"
-                  onChange={() => setBabyChoice(key)}
-                  checked={babyChoice === key}
+                  onChange={() => toggleBabyNeed(key)}
+                  checked={babyNeeds.includes(key)}
                 />
                 <span className={radioTextClass}>{label}</span>
               </label>
@@ -321,17 +326,39 @@ export default function Reservation() {
               </li>
             ))}
           </ul>
-          {shuttleChoice && (
-            <p className="font-[family-name:var(--font-playfair)] text-[#b8735a] text-lg mt-3 pt-3 border-t border-[#e8ddd8]">
-              {shuttleChoice === "shuttle"
-                ? t("recap.shuttle")
-                : t("recap.walk")}
-            </p>
-          )}
-          {hasEnfant && babyChoice && (
-            <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] text-lg mt-1 italic">
-              {babyChoices.find((b) => b.key === babyChoice)?.label}
-            </p>
+          {(presence || logement || shuttleChoice || babyNeeds.length > 0) && (
+            <div className="mt-3 pt-3 border-t border-[#e8ddd8] space-y-1">
+              {presence && (
+                <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] text-lg">
+                  {presence === "confirm"
+                    ? t("presence.confirm")
+                    : t("presence.decline")}
+                </p>
+              )}
+              {logement && (
+                <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] text-lg">
+                  {logement === "onSite"
+                    ? t("logement.onSite")
+                    : t("logement.other")}
+                </p>
+              )}
+              {shuttleChoice && (
+                <p className="font-[family-name:var(--font-playfair)] text-[#b8735a] text-lg">
+                  {shuttleChoice === "shuttle"
+                    ? t("recap.shuttle")
+                    : t("recap.walk")}
+                </p>
+              )}
+              {hasEnfant &&
+                babyNeeds.map((need) => (
+                  <p
+                    key={need}
+                    className="font-[family-name:var(--font-playfair)] text-[#8c7b72] text-lg italic"
+                  >
+                    {babyChoices.find((b) => b.key === need)?.label}
+                  </p>
+                ))}
+            </div>
           )}
         </div>
       )}
