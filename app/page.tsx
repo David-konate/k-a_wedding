@@ -295,7 +295,7 @@ export default function HomePage() {
           Katherine &amp; Antoine
         </p>
         <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] text-base tracking-widest uppercase">
-          05.01.2026 · Le Reposoir
+          05.01.2026 · Le Reposoir 
         </p>
       </footer>
     </main>
