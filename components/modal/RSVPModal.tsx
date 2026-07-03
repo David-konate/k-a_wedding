@@ -34,6 +34,8 @@ export default function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -97,17 +99,37 @@ export default function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
 
   // ─────────────────────────────────────────────────────────
 
-  const handleSubmit = (e: React.MouseEvent) => {
+  const handleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault();
-    // TODO: envoyer les données à votre API / backend
-    console.log("RSVP soumis :", form);
-    setSubmitted(true);
+    setSending(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/rsvp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Erreur lors de l'envoi");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        "Une erreur est survenue. Vérifiez votre connexion et réessayez.",
+      );
+      console.error("Échec envoi RSVP :", err);
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleClose = () => {
     onClose();
     setTimeout(() => {
       setSubmitted(false);
+      setError(null);
+      setSending(false);
       setForm({
         nom: "",
         email: "",
@@ -491,14 +513,21 @@ export default function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
                     />
                   </div>
 
+                  {/* Erreur */}
+                  {error && (
+                    <p className="text-center text-sm text-red-500 font-[family-name:var(--font-cormorant)] bg-red-50 border border-red-100 rounded-lg py-2 px-3">
+                      {error}
+                    </p>
+                  )}
+
                   {/* Submit */}
                   <button
                     type="button"
                     onClick={handleSubmit}
-                    disabled={!isFormValid}
+                    disabled={!isFormValid || sending}
                     className="w-full mt-2 bg-rose-500 hover:bg-rose-600 disabled:bg-rose-200 disabled:cursor-not-allowed text-white font-bold py-3 px-6 rounded-full transition-colors font-[family-name:var(--font-playfair)] tracking-wide text-sm shadow-md hover:shadow-lg"
                   >
-                    Envoyer ma réponse
+                    {sending ? "Envoi en cours…" : "Envoyer ma réponse"}
                   </button>
                   <p className="text-center text-xs text-rose-300 font-[family-name:var(--font-cormorant)] -mt-2">
                     * Champs obligatoires
