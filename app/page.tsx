@@ -56,7 +56,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center py-12 px-6 bg-white">
         <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
           <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            Photo
+            <img src="../public/k&m.jpeg" alt="picture Kath & Antoine" />
           </span>
         </div>
       </section>
@@ -128,7 +128,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center py-12 px-6 bg-white">
         <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
           <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            Photo
+            <img src="../public/k&m1.jpeg" alt="picture Kath & Antoine" />
           </span>
         </div>
       </section>
@@ -215,7 +215,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center py-12 px-6 bg-white">
         <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
           <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            Photo
+            <img src="../public/k&m.jpeg2" alt="picture Kath & Antoine" />
           </span>
         </div>
       </section>
@@ -289,13 +289,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FOOTER */} 
+      {/* FOOTER */}
       <footer className="py-10 text-center bg-[#3a2e2e]">
         <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl mb-1">
           Katherine &amp; Antoine
         </p>
         <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] text-base tracking-widest uppercase">
-          05.01.2026 · Le Reposoir 
+          05.01.2026 · Le Reposoir
         </p>
       </footer>
     </main>

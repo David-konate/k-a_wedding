@@ -60,7 +60,24 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({ ok: true });
+    // Apps Script renvoie toujours HTTP 200 : il faut lire le corps JSON
+    // pour savoir si l'enregistrement (et l'envoi du mail) a réellement réussi.
+    const body = (await res.json()) as {
+      ok?: boolean;
+      error?: string;
+      mailOk?: boolean;
+      mailError?: string;
+    };
+
+    if (!body.ok) {
+      return NextResponse.json(
+        { ok: false, error: body.error ?? "Erreur côté Google Script" },
+        { status: 502 },
+      );
+    }
+
+    // La réservation est enregistrée ; on remonte l'état de l'e-mail sans bloquer.
+    return NextResponse.json({ ok: true, mailOk: body.mailOk ?? true });
   } catch (err) {
     return NextResponse.json(
       { ok: false, error: String(err) },
