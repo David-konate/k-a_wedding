@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reservation from "@/components/Reservation";
+import test from "../public/k&m.jpeg";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -56,7 +57,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center py-12 px-6 bg-white">
         <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
           <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            <img src="../public/k&m.jpeg" alt="picture Kath & Antoine" />
+            <img src="k&m.jpeg" alt="picture Kath & Antoine" />
           </span>
         </div>
       </section>
@@ -128,7 +129,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center py-12 px-6 bg-white">
         <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
           <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            <img src="../public/k&m1.jpeg" alt="picture Kath & Antoine" />
+            <img src="k&m1.jpeg" alt="picture Kath & Antoine" />
           </span>
         </div>
       </section>
@@ -215,7 +216,7 @@ export default function HomePage() {
       <section className="flex items-center justify-center py-12 px-6 bg-white">
         <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
           <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            <img src="../public/k&m.jpeg2" alt="picture Kath & Antoine" />
+            <img src="k&m.jpeg2" alt="picture Kath & Antoine" />
           </span>
         </div>
       </section>
