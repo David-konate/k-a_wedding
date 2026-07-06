@@ -133,7 +133,7 @@ export default function HomePage() {
           <img
             src="/k&m1.jpeg"
             alt="Kath & Antoine"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
@@ -222,7 +222,7 @@ export default function HomePage() {
           <img
             src="/k&m2.jpeg"
             alt="Kath & Antoine"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
