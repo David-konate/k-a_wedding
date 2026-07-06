@@ -55,10 +55,12 @@ export default function HomePage() {
 
       {/* ===================== PHOTO 1 ===================== */}
       <section className="flex items-center justify-center py-12 px-6 bg-white">
-        <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
-          <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            <img src="k&m.jpeg" alt="picture Kath & Antoine" />
-          </span>
+        <div className="w-full max-w-3xl h-96 ... overflow-hidden">
+          <img
+            src="/k&m.jpeg"
+            alt="Kath & Antoine"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 
@@ -127,10 +129,12 @@ export default function HomePage() {
 
       {/* ===================== PHOTO 2 ===================== */}
       <section className="flex items-center justify-center py-12 px-6 bg-white">
-        <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
-          <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            <img src="k&m1.jpeg" alt="picture Kath & Antoine" />
-          </span>
+        <div className="w-full max-w-3xl h-96 ... overflow-hidden">
+          <img
+            src="/k&m1.jpeg"
+            alt="Kath & Antoine"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 
@@ -214,10 +218,12 @@ export default function HomePage() {
 
       {/* ===================== PHOTO 3 ===================== */}
       <section className="flex items-center justify-center py-12 px-6 bg-white">
-        <div className="w-full max-w-3xl h-96 bg-[#f0e8e2] rounded-none flex items-center justify-center border border-[#e0d0c8]">
-          <span className="text-[#b8a09a] font-[family-name:var(--font-playfair)] text-base tracking-widest uppercase">
-            <img src="k&m.jpeg2" alt="picture Kath & Antoine" />
-          </span>
+        <div className="w-full max-w-3xl h-96 ... overflow-hidden">
+          <img
+            src="/k&m2.jpeg"
+            alt="Kath & Antoine"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 
