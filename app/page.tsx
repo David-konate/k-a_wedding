@@ -133,8 +133,7 @@ export default function HomePage() {
           <img
             src="/k&m1.jpeg"
             alt="Kath & Antoine"
-            className="w-full h-full object-cover"
-          />
+className="w-full h-full object-cover object-top"          />
         </div>
       </section>
 
