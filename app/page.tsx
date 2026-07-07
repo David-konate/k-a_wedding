@@ -216,6 +216,13 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.color-palette")}
           </p>
+          <div className="mt-10 flex justify-center">
+            <img
+              src="/color.jpeg"
+              alt="Palette de couleurs du mariage"
+              className="w-full max-w-xl rounded-sm border border-[#e8ddd8] shadow-sm"
+            />
+          </div>
         </div>
       </section>
 
