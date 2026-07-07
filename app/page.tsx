@@ -213,6 +213,17 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.description")}
           </p>
+          <div className="mt-10 flex justify-center">
+            <img
+              src="/vetement.jpeg"
+              alt="Code vestimentaire du mariage"
+              className="w-full max-w-2xl rounded-sm border border-[#e8ddd8] shadow-sm"
+            />
+          </div>
+
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mt-16 mb-4">
+            {t("dresscode.colorTitle")}
+          </h2>
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.color-palette")}
           </p>
