@@ -213,6 +213,9 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.description")}
           </p>
+          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
+            {t("dresscode.color-palette")}
+          </p>
         </div>
       </section>
 
