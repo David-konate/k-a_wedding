@@ -294,6 +294,12 @@ export default function HomePage() {
               <div className="w-1 h-1 rounded-full bg-[#b8735a] opacity-60" />
               <div className="w-12 h-px bg-[#b8735a] opacity-40" />
             </div>
+            <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg text-center mt-6">
+              {t("rsvp.intro1")}
+            </p>
+            <p className="font-[family-name:var(--font-playfair)] text-[#6b5b52] leading-snug text-lg text-center mt-4">
+              {t("rsvp.intro2")}
+            </p>
           </div>
           <Reservation />
         </div>

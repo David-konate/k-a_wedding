@@ -83,6 +83,8 @@
   },
   "rsvp": {
     "title": "Confirmación de presencia",
+    "intro1": "Con el fin de organizar esta celebración en las mejores condiciones, les agradeceremos confirmar su asistencia a más tardar el 31 de agosto 2026.",
+    "intro2": "Estamos deseando compartir con ustedes estos momentos tan especiales y esperamos tener el placer de contar con su presencia para celebrar juntos este día inolvidable.",
     "guestNames": "Nombre de los invitados",
     "confirm": "Confirmo mi asistencia",
     "decline": "Tengo que desistir",

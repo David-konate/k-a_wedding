@@ -83,6 +83,8 @@
   },
   "rsvp": {
     "title": "Confirmation de présence",
+    "intro1": "Afin de nous permettre d'organiser cette journée dans les meilleures conditions, nous vous remercions de bien vouloir nous confirmer votre présence avant le 31 août 2026.",
+    "intro2": "Nous avons hâte de partager avec vous ces précieux moments et espérons avoir le plaisir de vous compter parmi nous pour célébrer cette journée inoubliable.",
     "guestNames": "Noms des invités",
     "confirm": "Je confirme notre présence",
     "decline": "Je décline l'invitation",
