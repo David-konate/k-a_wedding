@@ -36,7 +36,7 @@ export default function HomePage() {
         </h1>
 
         <p className="font-[family-name:var(--font-playfair)] text-[#b8735a] text-xl tracking-[0.3em] uppercase mt-4 mb-8">
-          05 · 01 · 2026
+          05 · 01 · 2027
         </p>
 
         <div className="flex items-center gap-4 my-4">
@@ -329,7 +329,7 @@ export default function HomePage() {
           Katherine &amp; Antoine
         </p>
         <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] text-base tracking-widest uppercase">
-          05.01.2026 · Le Reposoir
+          05.01.2027 · Le Reposoir
         </p>
       </footer>
     </main>
