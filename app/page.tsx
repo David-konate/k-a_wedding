@@ -69,7 +69,7 @@ export default function HomePage() {
       <section className="py-20 px-6 max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl mb-2">
-            Informations pratiques
+            Informations pratiques · Información práctica
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide">
             {t("access.title")}
@@ -143,7 +143,7 @@ export default function HomePage() {
       <section className="py-20 px-6 max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl mb-2">
-            Sur place
+            Sur place · En el lugar
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide">
             {t("accommodation.title")}
@@ -206,7 +206,7 @@ export default function HomePage() {
       <section className="py-20 px-6 bg-[#f5ece6]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl mb-2">
-            Tenue
+            Tenue · Vestimenta
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mb-4">
             {t("dresscode.colorTitle")}
@@ -273,7 +273,7 @@ export default function HomePage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-[family-name:var(--font-vibes)] text-[#b8735a] text-3xl mb-2">
-            Nous joindre
+            Nous joindre · Contáctanos
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mb-10">
             {t("contact.title")}
