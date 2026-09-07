@@ -1,10 +1,11 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Reservation from "@/components/Reservation";
 import test from "../public/k&m.jpeg";
 
 export default function HomePage() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <main className="min-h-screen bg-[#fdf6f0] text-[#3a2e2e]">
@@ -208,20 +209,6 @@ export default function HomePage() {
             Tenue
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mb-4">
-            {t("dresscode.title")}
-          </h2>
-          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
-            {t("dresscode.description")}
-          </p>
-          <div className="mt-10 flex justify-center">
-            <img
-              src="/vetement.jpeg"
-              alt="Code vestimentaire du mariage"
-              className="w-full max-w-2xl rounded-sm border border-[#e8ddd8] shadow-sm"
-            />
-          </div>
-
-          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mt-16 mb-4">
             {t("dresscode.colorTitle")}
           </h2>
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
@@ -229,9 +216,23 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex justify-center">
             <img
-              src="/color.jpeg"
-              alt="Palette de couleurs du mariage"
-              className="w-full max-w-xl rounded-sm border border-[#e8ddd8] shadow-sm"
+              src={`/color-${locale}.jpeg`}
+              alt={t("dresscode.colorTitle")}
+              className="w-full max-w-2xl rounded-sm border border-[#e8ddd8] shadow-sm"
+            />
+          </div>
+
+          <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mt-16 mb-4">
+            {t("dresscode.title")}
+          </h2>
+          <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug whitespace-pre-line">
+            {t("dresscode.description")}
+          </p>
+          <div className="mt-10 flex justify-center">
+            <img
+              src={`/vetement-${locale}.jpeg`}
+              alt={t("dresscode.title")}
+              className="w-full max-w-2xl rounded-sm border border-[#e8ddd8] shadow-sm"
             />
           </div>
         </div>
