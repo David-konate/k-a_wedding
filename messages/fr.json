@@ -103,6 +103,8 @@
       "mme": "Mme",
       "enfant": "Enfant"
     },
+    "firstName": "Prénom",
+    "lastName": "Nom",
     "babies": {
       "title": "🍼 Pour les tout-petits",
       "intro": "Merci de préciser votre intérêt, nous essayerons de répondre au mieux aux besoins de chacun :",

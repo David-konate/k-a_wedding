@@ -103,6 +103,8 @@
       "mme": "Sra.",
       "enfant": "Niño/a"
     },
+    "firstName": "Nombre",
+    "lastName": "Apellido",
     "babies": {
       "title": "🍼 Para los más pequeños",
       "intro": "Por favor, especifiquen sus necesidades; haremos lo mejor para poder satisfacerlas:",

@@ -165,7 +165,7 @@ export default function Reservation() {
 
               <input
                 type="text"
-                placeholder="Prénom"
+                placeholder={t("firstName")}
                 value={invite.prenom}
                 onChange={(e) =>
                   modifierInvite(invite.id, "prenom", e.target.value)
@@ -175,7 +175,7 @@ export default function Reservation() {
 
               <input
                 type="text"
-                placeholder="Nom"
+                placeholder={t("lastName")}
                 value={invite.nom}
                 onChange={(e) =>
                   modifierInvite(invite.id, "nom", e.target.value)

@@ -214,13 +214,18 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.color-palette")}
           </p>
-          <div className="mt-10 flex justify-center">
+          {/* Image large : sur mobile on la laisse deborder dans un conteneur
+              defilant, sinon les codes hexa deviennent illisibles */}
+          <div className="mt-10 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
             <img
               src={`/color-${locale}.jpeg`}
               alt={t("dresscode.colorTitle")}
-              className="w-full max-w-2xl rounded-sm border border-[#e8ddd8] shadow-sm"
+              className="w-[44rem] max-w-none rounded-sm border border-[#e8ddd8] shadow-sm sm:mx-auto sm:w-full sm:max-w-2xl"
             />
           </div>
+          <p className="font-[family-name:var(--font-playfair)] mt-2 text-sm italic text-[#b8a09a] sm:hidden">
+            Faites glisser · Deslice →
+          </p>
 
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mt-16 mb-4">
             {t("dresscode.title")}
@@ -228,13 +233,16 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug whitespace-pre-line">
             {t("dresscode.description")}
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
             <img
               src={`/vetement-${locale}.jpeg`}
               alt={t("dresscode.title")}
-              className="w-full max-w-2xl rounded-sm border border-[#e8ddd8] shadow-sm"
+              className="w-[52rem] max-w-none rounded-sm border border-[#e8ddd8] shadow-sm sm:mx-auto sm:w-full sm:max-w-2xl"
             />
           </div>
+          <p className="font-[family-name:var(--font-playfair)] mt-2 text-sm italic text-[#b8a09a] sm:hidden">
+            Faites glisser · Deslice →
+          </p>
         </div>
       </section>
 
