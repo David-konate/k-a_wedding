@@ -214,18 +214,16 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug">
             {t("dresscode.color-palette")}
           </p>
-          {/* Image large : sur mobile on la laisse deborder dans un conteneur
-              defilant, sinon les codes hexa deviennent illisibles */}
-          <div className="mt-10 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+          {/* Palette : format long sur ordinateur (>= 640px),
+              format sur plusieurs lignes sur telephone */}
+          <picture className="mt-10 block">
+            <source media="(min-width: 640px)" srcSet={`/color-${locale}.jpeg`} />
             <img
-              src={`/color-${locale}.jpeg`}
+              src={`/color-${locale}-mobile.jpeg`}
               alt={t("dresscode.colorTitle")}
-              className="w-[44rem] max-w-none rounded-sm border border-[#e8ddd8] shadow-sm sm:mx-auto sm:w-full sm:max-w-2xl"
+              className="mx-auto w-full max-w-md rounded-sm border border-[#e8ddd8] shadow-sm sm:max-w-2xl"
             />
-          </div>
-          <p className="font-[family-name:var(--font-playfair)] mt-2 text-sm italic text-[#b8a09a] sm:hidden">
-            Faites glisser · Deslice →
-          </p>
+          </picture>
 
           <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-light text-[#3a2e2e] tracking-wide mt-16 mb-4">
             {t("dresscode.title")}
@@ -233,16 +231,16 @@ export default function HomePage() {
           <p className="font-[family-name:var(--font-playfair)] text-[#8c7b72] italic text-xl leading-snug whitespace-pre-line">
             {t("dresscode.description")}
           </p>
-          <div className="mt-10 -mx-6 overflow-x-auto px-6 sm:mx-0 sm:px-0">
+          {/* Tenues : format long sur ordinateur (>= 640px),
+              format sur plusieurs lignes sur telephone */}
+          <picture className="mt-10 block">
+            <source media="(min-width: 640px)" srcSet={`/vetement-${locale}.jpeg`} />
             <img
-              src={`/vetement-${locale}.jpeg`}
+              src={`/vetement-${locale}-mobile.jpeg`}
               alt={t("dresscode.title")}
-              className="w-[52rem] max-w-none rounded-sm border border-[#e8ddd8] shadow-sm sm:mx-auto sm:w-full sm:max-w-2xl"
+              className="mx-auto w-full max-w-md rounded-sm border border-[#e8ddd8] shadow-sm sm:max-w-2xl"
             />
-          </div>
-          <p className="font-[family-name:var(--font-playfair)] mt-2 text-sm italic text-[#b8a09a] sm:hidden">
-            Faites glisser · Deslice →
-          </p>
+          </picture>
         </div>
       </section>
 
